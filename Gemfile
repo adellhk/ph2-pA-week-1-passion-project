@@ -18,6 +18,7 @@ gem 'rake'
 
 gem 'shotgun'
 gem 'bcrypt'
+gem 'sinatra-partial'
 
 group :test do
   gem 'faker'

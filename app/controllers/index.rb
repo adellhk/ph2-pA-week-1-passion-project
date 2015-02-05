@@ -18,25 +18,26 @@ get '/signup' do
 end
 
 post '/signup' do
-  if User.find_by(username: params[:username]).nil?
-    User.create(username: params[:username], password_hash: params[:password])
+  if User.find_by(username: params[:username]).nil? && User.find_by(handle: params[:handle]).nil?
+    User.create(username: params[:username], handle: params[:handle], password_hash: params[:password])
     user = User.find_by(username: params[:username])
     session[:user_id] = user.id
     user.password = params[:password]
     user.save
   else
-    redirect '/signup'
+    redirect '/signup' #<< partial (: invalid_user )
   end
 end
 
 post '/login' do
-  if User.find_by(username: params[:username]).nil?
-    if User.authenticate(params[:password])
+  user = User.find_by(username: params[:username])
+  unless user.nil?
+    if user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect '/user/'
+      redirect "/user/#{user.handle}"
+    else
+      redirect '/login/'
     end
-  else
-    redirect '/error'
   end
 end
 # signup login
