@@ -108,86 +108,6 @@
 	"buffers":
 	[
 		{
-			"file": "db/migrate/20150205194741_create_users.rb",
-			"settings":
-			{
-				"buffer_size": 219,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "db/migrate/20150205194733_create_reviews.rb",
-			"settings":
-			{
-				"buffer_size": 235,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "db/migrate/20150205194725_create_shoes.rb",
-			"settings":
-			{
-				"buffer_size": 217,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "db/migrate/20150205194748_create_foot_profiles.rb",
-			"settings":
-			{
-				"buffer_size": 271,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "db/migrate/20150205195530_create_votes.rb",
-			"settings":
-			{
-				"buffer_size": 213,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/vote.rb",
-			"settings":
-			{
-				"buffer_size": 100,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/user.rb",
-			"settings":
-			{
-				"buffer_size": 227,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/shoe.rb",
-			"settings":
-			{
-				"buffer_size": 165,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/review.rb",
-			"settings":
-			{
-				"buffer_size": 116,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/foot_profile.rb",
-			"settings":
-			{
-				"buffer_size": 277,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Planning - Schema, Models, and Features.md",
 			"settings":
 			{
@@ -308,6 +228,17 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/app/models/shoe.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/app/models/user.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/app/models/vote.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/db/migrate/20150205195530_create_votes.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/db/migrate/20150205194748_create_foot_profiles.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/db/migrate/20150205194725_create_shoes.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/db/migrate/20150205194733_create_reviews.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/app/models/foot_profile.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/app/models/review.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/db/migrate/20150205194741_create_users.rb",
+		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/ph2-pA-week-1-passion-project/Planning - Schema, Models, and Features.md",
 		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/passion-project-a/db/migrate/20150205120043_create_users.rb",
 		"/C/Users/Adell/Documents/DBC/phase-2 (!!)/week-1/passion-project-a/README.md",
 		"/C/users/Adell/Documents/DBC/phase-2 (!!)/week-1/sinatra-url-shortener-challenge/Gemfile",
@@ -424,18 +355,7 @@
 		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/1-drawer-debugger/my_solution.rb",
 		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/4-bingo-2-solo-challenge/my_solution.rb",
 		"/C/Users/Adell/Documents/DBC/phase-0-unit-1/week-3/exercises/12-smallest-integer/my_solution.rb",
-		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/8-gps2-2/my_solution.rb",
-		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/7-cultural-blog.md",
-		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/4-bingo-2-solo-challenge/README.md",
-		"/C/Users/Adell/Documents/DBC/phase-0-unit-2/week-6/test.rb",
-		"/C/Users/Adell/Documents/DBC/adellhk.github.io/blog/t6-oop-concepts.html",
-		"/C/Users/Adell/Documents/DBC/adellhk.github.io/blog/t3-arrays-hashes.html",
-		"/C/Users/Adell/Documents/DBC/adellhk.github.io/blog/t5-ruby-classes.html",
-		"/C/Users/Adell/Documents/DBC/adellhk.github.io/blog/c4-tech-issues.html",
-		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/6-technical-blog.md",
-		"/C/Users/Adell/Documents/DBC/phase-0-unit-2/week-5/6-validate-credit-card/README.md",
-		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/3-PezDispenser/README.md",
-		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/3-PezDispenser/my_solution.rb"
+		"/C/Users/Adell/documents/dbc/phase-0-unit-2/week-6/8-gps2-2/my_solution.rb"
 	],
 	"find":
 	{
@@ -611,269 +531,8 @@
 	"groups":
 	[
 		{
-			"selected": 9,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "db/migrate/20150205194741_create_users.rb",
-					"settings":
-					{
-						"buffer_size": 219,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								200,
-								200
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "db/migrate/20150205194733_create_reviews.rb",
-					"settings":
-					{
-						"buffer_size": 235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								84,
-								84
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "db/migrate/20150205194725_create_shoes.rb",
-					"settings":
-					{
-						"buffer_size": 217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								206,
-								206
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "db/migrate/20150205194748_create_foot_profiles.rb",
-					"settings":
-					{
-						"buffer_size": 271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								271,
-								271
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "db/migrate/20150205195530_create_votes.rb",
-					"settings":
-					{
-						"buffer_size": 213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								171,
-								171
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/models/vote.rb",
-					"settings":
-					{
-						"buffer_size": 100,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								95,
-								95
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/models/user.rb",
-					"settings":
-					{
-						"buffer_size": 227,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								96,
-								96
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/models/shoe.rb",
-					"settings":
-					{
-						"buffer_size": 165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								79,
-								79
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/models/review.rb",
-					"settings":
-					{
-						"buffer_size": 116,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/models/foot_profile.rb",
-					"settings":
-					{
-						"buffer_size": 277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								277,
-								277
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -881,7 +540,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 10,
+					"buffer": 0,
 					"file": "Planning - Schema, Models, and Features.md",
 					"settings":
 					{
@@ -892,18 +551,16 @@
 						"selection":
 						[
 							[
-								2616,
-								2616
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"parser": "github",
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"target": "disk"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1775.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
