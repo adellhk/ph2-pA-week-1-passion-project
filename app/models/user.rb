@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :reviews, class_name: "User", foreign_key: "atuhor_id"
+  has_many :reviews , class_name: "Review", foreign_key: "author_id"
   belongs_to :foot_profile
 
   def all_comments

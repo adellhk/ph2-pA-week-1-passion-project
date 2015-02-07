@@ -31,7 +31,5 @@ group :test, :development do
   gem 'rerun'
   gem 'shotgun'
   gem 'factory_girl'
-  gem 'faker'
-  gem 'shotgun'
   gem 'sinatra-partial'
 end
