@@ -83,7 +83,7 @@ login/logout validation
 
 
 ####Deliverables
-* Readme.md with running instructions 
+* Readme.md with running instructions
 * **Passion Project A Features & Requirements Chart:**
 
 | Feature |  P1 |  P2 |  P3 |  P4 |  P5 |
@@ -96,3 +96,19 @@ login/logout validation
 to-do:
 2.5
 Test connections with fake seeds in db
+Search: ilike(any(array)) (?syntax)
+
+where(product ilike ANY([? ARRAY]))
+<!-- Angela & Bryan code below: -->
+class Question < Posting
+  has_many :answers
+
+
+  def self.search(string)
+    Question.where("content ILIKE ANY ( array[?] ) OR title ILIKE ANY ( array[?] )", parsed(string), parsed(string))
+  end
+
+  def self.parsed(string)
+    string.tr('^A-Za-z0-9 ', '').split(' ').map {|val| "%#{val}%" }
+  end
+end

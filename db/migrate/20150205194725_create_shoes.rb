@@ -7,5 +7,6 @@ class CreateShoes < ActiveRecord::Migration
       t.integer   :size
 
       t.timestamps
+    end
   end
 end
