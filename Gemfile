@@ -24,6 +24,7 @@ group :test do
   gem 'rack-test'
   gem 'rspec'
   gem 'capybara'
+  gem 'faker'
 end
 
 group :test, :development do
@@ -31,4 +32,6 @@ group :test, :development do
   gem 'shotgun'
   gem 'factory_girl'
   gem 'faker'
+  gem 'shotgun'
+  gem 'sinatra-partial'
 end

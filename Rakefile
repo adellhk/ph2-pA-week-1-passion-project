@@ -6,6 +6,7 @@ require ::File.expand_path('../config/environment', __FILE__)
 require 'active_support/core_ext'
 
 namespace :generate do
+
   desc "Create RESTful routes for NOUN"
   task :controller do
     unless ENV.has_key?('NOUN')
