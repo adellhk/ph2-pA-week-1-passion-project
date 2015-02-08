@@ -2,42 +2,58 @@ get '/session-viewer' do
   session.inspect
 end
 
-get '/' do
-
-  erb :index
+get '/session-reset' do
+  session[:user_password] = nil
+  session[:user_id] = nil
+  session.inspect
 end
 
-get '/login' do
+get '/' do
+  if authorized?
+    erb :shoes
+  else
+    erb :index
+  end
+end
 
+get '/login/?' do
   erb :login
 end
 
-get '/signup' do
-
-  erb :signup
-end
-
-post '/signup' do
-  if User.find_by(username: params[:username]).nil? && User.find_by(handle: params[:handle]).nil?
-    User.create(username: params[:username], handle: params[:handle], password_hash: params[:password])
-    user = User.find_by(username: params[:username])
-    session[:user_id] = user.id
-    user.password = params[:password]
-    user.save
-  else
-    redirect '/signup' #<< partial (: invalid_user )
-  end
+get '/login/again' do
+  erb :login_again
 end
 
 post '/login' do
-  user = User.find_by(username: params[:username])
-  unless user.nil?
+  user = User.find_by(email: params[:email])
+  if user.nil? # If email doesn't exist, try again.
+    redirect '/login/again'
+  else # If email exists, try to authenticate
     if user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect "/user/#{user.handle}"
+      session[:user_password] = user.password_hash
+      redirect "/shoes"
     else
-      redirect '/login/'
+      redirect '/login/again'
     end
   end
 end
-# signup login
+
+# get '/register' do
+
+#   erb :register
+# end
+# ### DEPRECATED, MOVED INTO USER CONTROLLER
+# post '/register' do
+#   if User.find_by(username: params[:username]).nil? && User.find_by(email: params[:email]).nil?
+#     User.create(username: params[:username], email: params[:email], password_hash: params[:password])
+#     user = User.find_by(username: params[:username])
+#     session[:user_id] = user.id
+#     user.password = params[:password]
+#     user.save
+#   else
+#     redirect '/register' #<< partial (: invalid_user )
+#   end
+# end
+
+# register login

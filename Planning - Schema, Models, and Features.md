@@ -61,7 +61,6 @@
 * Portfolio 1: Sinatra RESTful CRUD
 * Portfolio 2: Active Record
 * Portfolio 3: Authentication And Authorization
-login/logout validation
 * Portfolio 4: HTML and CSS
 * Portfolio 5: Validations and Errors
 

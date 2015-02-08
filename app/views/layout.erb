@@ -18,7 +18,8 @@
   <title></title>
 </head>
 <body>
-  <div class='container'><%= yield %></div>
-  <%= yield %>
+  <div id="header"><a href="/">home</a> <a href="/users/<%= current_user_username if current_user_exist? %>">profile</a></div>
+  <div id='container'><%= yield %></div>
+  <div id="footer"></div>
 </body>
 </html>

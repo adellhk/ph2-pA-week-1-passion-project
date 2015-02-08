@@ -1,0 +1,7 @@
+<div id="shoes">
+<ul>
+<% Shoe.all.each do |shoe| %>
+<li><a href="/shoes/<%=shoe.id%>"><%= shoe.brand + " " + shoe.model %></a></li>
+<% end %>
+</ul>
+</div>
