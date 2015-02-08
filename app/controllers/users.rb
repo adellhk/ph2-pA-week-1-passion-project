@@ -22,7 +22,10 @@ post '/users' do
   end
 end
 # get a specific instance of users
-get '/users/:id' do
+get '/users/:username' do
+  @user = User.find_by(username: params[:username])
+
+  erb :user_profile
 end
 # get a form to edit a specific instance of users
 get '/users/:id/edit' do

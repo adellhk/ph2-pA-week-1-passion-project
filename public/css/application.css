@@ -70,3 +70,20 @@ a:hover {
   font-family: 'LeagueGothicRegular';
   font-size: 3em;
 }
+#navbar {
+  margin: auto;
+  position: relative;
+  height: 100%;
+  /*min-height: 100%;*/
+  width: 66%;
+  background: #1C9E16;
+  opacity: .8;
+  display: block;
+  /*padding: 0px 20px 20px 20px;*/
+  border: 1px dotted #92AB75;
+}
+#shoe p {
+  text-align: left;
+  font-size: 1.25em;
+}
+/*https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.9035260443526146,0.9038915488332979,0.903921568627451,0.06463399171987551,0.6939215686274509,0.39354344846038036,0.10959220363431856,0.6039215686274509,0.086447193010976,0.5263261507257542,0.6939215686274509,0.06463399171987551,0.7290196078431372,0.6754610157794895,0.2904771081896126&swatchOrder=0,1,2,3,4*/

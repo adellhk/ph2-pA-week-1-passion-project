@@ -1,3 +1,8 @@
-<div id="shoe_instance">
-  <%= @shoe.brand + " " + @shoe.model %>
+<div id="shoe">
+  <h1 id="title"><%= @shoe.brand + " " + @shoe.model %></h1>
+  <a href="/shoes/<%= @shoe.id %>/new_review">Write a new review for the <%= @shoe.brand + " " + @shoe.model %></a>
+  <% @shoe.reviews.each do |review| %>
+  <p><span style="font-size:.8em;"><%= review.updated_at %> <% author_name = User.find(review.author_id).username %><a href="../users/<%= author_name %>"><%= author_name %></a></span><br>
+  <%= review.message %></p>
+  <% end %>
 </div>

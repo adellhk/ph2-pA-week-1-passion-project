@@ -20,8 +20,10 @@ get '/shoes/:id/?' do
   erb :shoe_instance
 end
 # # get a form to edit a specific instance of shoes
-# get '/shoes/:id/edit' do
-# end
+get '/shoes/:id/new_review' do
+  session[:last_shoe_id] = params[:id]
+  redirect '/reviews/new'
+end
 # # edit a specific instance of shoes
 # put '/shoes/:id' do
 # end

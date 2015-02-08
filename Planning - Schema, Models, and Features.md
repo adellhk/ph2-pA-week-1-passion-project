@@ -93,6 +93,11 @@
 
 
 to-do:
+2.8
+add "review written XXX ago" counter
+add error handling & validations
+add pictures
+
 2.5
 Test connections with fake seeds in db
 Search: ilike(any(array)) (?syntax)
