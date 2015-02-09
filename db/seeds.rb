@@ -1,5 +1,12 @@
 def generate_shoes
-  shoes = {"La Sportiva" => ["Solution", "Solution Women's", "Miura", "Miura VS", "Oxygym", "Tarantula", "Testarossa"], "5.10" => ["Teams", "Blackwing", "Anasazi"], "Evolv" => ["Shaman"], "Mad Rock" => ["Shark 2.0"], "Tenaya" => ["Oasi"]}
+  shoes = {
+    "La Sportiva" => ["Solution", "Solution Women's", 'Genius', "Testarossa"],
+    "Five Ten" => ["Team 5.10", "Blackwing", "Anasazi VCS", 'Dragon'],
+    "Evolv" => ["Shaman"],
+    "Scarpa" => ["Instinct VS"],
+    "Mad Rock" => ["Shark 2.0"],
+    "Tenaya" => ["Oasi"]
+  }
 
   shoes.each_key do |brand|
     shoes[brand].each do |model|
@@ -11,13 +18,12 @@ end
 
 def generate_users(num_users = 10)
   num_users.times do
-    User.create(username: Faker::Internet.user_name)
+    User.create(username: Faker::Internet.user_name, email: Faker::Internet.email)
   end
-
 end
 
 def generate_reviews(num_reviews = 104)
   num_reviews.times do
-    Review.create(author_id: [*1..10].sample, message: Faker::Lorem.sentences(3), shoe_id: [*1..26].sample, fits: [true, false].sample)
+    Review.create(author_id: [*1..10].sample, message: Faker::Lorem.sentences(3), shoe_id: [*1..12].sample, fits: [true, false].sample)
   end
 end

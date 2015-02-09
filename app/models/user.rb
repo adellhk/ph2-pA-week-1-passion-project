@@ -23,4 +23,23 @@ class User < ActiveRecord::Base
     def authenticate(password)
       self.password == password
     end
+
+# validations
+    # validates :username, :email, presence: true, uniqueness: true
+    # validate :valid_email #, on: :create
+    def valid_email
+      errors.add :email, "is invalid" unless self.email =~ /\A[\w+]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+    end
+
+    def display_errors
+      html = []
+      self.errors.messages.each_pair do |attribute, errors|
+        html << "<b>#{attribute}:</b><br>"
+        errors.each do |error| "error"
+          html << "#{error}<br>"
+        end
+      end
+      return html.join("")
+    end
+
 end

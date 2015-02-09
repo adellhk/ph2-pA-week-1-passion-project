@@ -36,7 +36,7 @@ post '/login' do
   else # If email exists, try to authenticate
     if user.authenticate(params[:password])
       session[:user_id] = user.id
-      session[:user_password] = user.password_hash
+      session[:user_password] = user.password
       redirect "/shoes"
     else
       redirect '/login/again'

@@ -2,6 +2,7 @@ class Shoe < ActiveRecord::Base
   has_many :reviews
 
   def image_path
-    # composite attribute for shoe image based on brand and model naming convention
+    path = "#{self.brand}"+"_"+"#{self.model}"
+    path.gsub(" ", "-").gsub("\'", "")
   end
 end

@@ -18,7 +18,7 @@
   <title></title>
 </head>
 <body>
-  <div id="header"><div id="navbar"><a href="/">home</a> <a href="/users/<%= current_user_username if current_user_exist? %>">profile</a> <a href="/"><span style="margin:0">rock shoes</span></a><span style="float:right"><a href="/logout">logout</a></span></div></div>
+  <div id="header"><div id="navbar"><a href="/">home</a> <a href="/users/<%= current_user_username if current_user_exist? %>">profile</a> <a href="/"><span style="margin:0">rock shoes</span></a><span style="float:right"><%= responsive_login_form %></span></div></div>
   <div id='container'><%= yield %></div>
   <div id="footer"></div>
 </body>

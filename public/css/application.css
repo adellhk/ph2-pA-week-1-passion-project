@@ -2,17 +2,16 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #92AB75;
-  }
+  background-color: rgba(9, 41, 2, 0.25);
+}
 
 #container {
   margin: auto;
   position: relative;
   height: 100%;
   /*min-height: 100%;*/
-  width: 66%;
-  background: #1C9E16;
+  width: 75%;
+  background: white;
   opacity: .8;
   display: block;
   /*padding: 0px 20px 20px 20px;*/
@@ -27,8 +26,8 @@ th {
   margin: auto;
   width: 100%;
   height: 3em;
-  background: #1C9E16;
-  opacity: 1;
+  background: rgba(9, 41, 2, 0.6);
+  opacity: .8;
 }
 
 #footer {
@@ -36,8 +35,8 @@ th {
   bottom: 0;
   width: 100%;
   height: 3em;
-  background: #1C9E16;
-  opacity: 1;
+  background: rgba(9, 41, 2, 0.6);
+  opacity: .8;
 }
 
 #new_user {
@@ -49,20 +48,24 @@ th {
   font-size: 2em;
 }
 a {
-  color: #EAEBEB;
+  color: #030F01;
 }
 a:hover {
   color: #BEB04B;
 }
 @font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url(../../imgs/League-Gothic/LeagueGothic-Regular.otf);
+  font-family: 'LeagueGothicRegular';
+  src: url(../../imgs/League-Gothic/LeagueGothic-Regular.otf);
 }
 #title{
-  text-shadow: 0px 1px 1px #1C9A16;
-  color: #1C8B16;
+  text-shadow: 0px 1px 1px rgba(2,8,0,0.5);
+  color: rgba(8,38,2,0.5);
   font-family: 'LeagueGothicRegular';
   font-size: 5em;
+  margin-top: 0; margin-bottom: 0;
+}
+#title:hover{
+  color: rgba(8,38,2,1);
 }
 #subtitle{
   text-shadow: 0px 1px 1px #1C9A16;
@@ -75,15 +78,57 @@ a:hover {
   position: relative;
   height: 100%;
   /*min-height: 100%;*/
-  width: 66%;
-  background: #1C9E16;
+  width: 75%;
+  background: rgba(9, 41, 2, 0.6);
   opacity: .8;
   display: block;
   /*padding: 0px 20px 20px 20px;*/
-  border: 1px dotted #92AB75;
+}
+#navbar a,p{
+  color: beige;
+}
+#navbar a:hover{
+  color: #BEB04B;
+}
+.review {
+  color: rgba(8,38,2,0.5);
+
+  margin:auto;
+  width:90%;
+  background: rgba(9, 41, 2, 0.6);
 }
 #shoe p {
   text-align: left;
   font-size: 1.25em;
+}
+
+.shoe_pane {
+  position:relative;
+  width: 10em;
+}
+.shoe_pane img{
+  width: 100%;
+}
+.shoe_pane:after {
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.6);
+  opacity:0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+.shoe_pane:hover:after {
+  opacity: 1;
+}
+
+#shoes {
+  text-align: center;
+}
+.shoe_pane a {
+  font-size: .7em;
+}
+#shoe_table {
+  margin:auto;
 }
 /*https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.9035260443526146,0.9038915488332979,0.903921568627451,0.06463399171987551,0.6939215686274509,0.39354344846038036,0.10959220363431856,0.6039215686274509,0.086447193010976,0.5263261507257542,0.6939215686274509,0.06463399171987551,0.7290196078431372,0.6754610157794895,0.2904771081896126&swatchOrder=0,1,2,3,4*/

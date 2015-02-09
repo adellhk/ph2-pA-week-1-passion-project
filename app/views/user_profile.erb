@@ -1,11 +1,13 @@
 <h1 id="title"><%= @user.username %></h1>
-<ol>
   <% @user.reviews.each do |review| %>
   <% shoes = Shoe.where(id: review.shoe_id) %>
   <% shoes.each do |shoe| %>
-<li><a href='../shoes/<%= shoe.id %>'><%= shoe.brand + ": " + shoe.model%></a></li>
-<%= review.message %><br><br>
+  <img src="/imgs/shoes/<%= shoe.image_path %>_Small.jpg" width="10%" style="display:inline-block; position:relative; margin-left:0">
+  <div class="review">
+<a href='../shoes/<%= shoe.id %>'><%= shoe.brand + ": " + shoe.model%></a>
+<%= review.message %>
+</div><br>
 <% end %>
 <% end %>
-</ol>
+
 
