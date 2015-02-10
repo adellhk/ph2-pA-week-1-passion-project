@@ -8,15 +8,6 @@ get '/users/new' do
 end
 # add a new users
 post '/users' do
-  # if User.find_by(username: params[:username]).nil? && User.find_by(email: params[:email]).nil?
-  #   User.create(username: params[:username], email: params[:email], password_hash: params[:password])
-  #   user = User.find_by(username: params[:username])
-  #   session[:user_id] = user.id
-  #   user.password = params[:password]
-  #   user.save
-  #   redirect '/shoes'
-  #   # "/users/#{user.username}"
-  # else
   session[:errors] = nil
   user = User.create(username: params[:username], email: params[:email], password: params[:password])
   if user.errors.any?
@@ -30,8 +21,8 @@ post '/users' do
 end
 # get a specific instance of users
 get '/users/:username' do
-  @user = User.find_by(username: params[:username])
-
+  @user = User.find_by(username:params[:username])
+  @shoes_with_reviews = @user.shoes_with_reviews(@user.id)
   erb :user_profile
 end
 # get a form to edit a specific instance of users

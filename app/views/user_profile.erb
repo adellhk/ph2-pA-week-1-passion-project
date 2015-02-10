@@ -1,13 +1,14 @@
-<h1 id="title"><%= @user.username %></h1>
-  <% @user.reviews.each do |review| %>
-  <% shoes = Shoe.where(id: review.shoe_id) %>
-  <% shoes.each do |shoe| %>
-  <img src="/imgs/shoes/<%= shoe.image_path %>_Small.jpg" width="10%" style="display:inline-block; position:relative; margin-left:0">
+<div class="content">
+  <h1 class="title"><%= @user.username %></h1>
+  <% @shoes_with_reviews.each_pair do |shoe, review| %>
   <div class="review">
-<a href='../shoes/<%= shoe.id %>'><%= shoe.brand + ": " + shoe.model%></a>
-<%= review.message %>
-</div><br>
-<% end %>
-<% end %>
+    <a href="/shoes/<%= shoe.id %>">
+      <img class="thumbnail" src="/imgs/shoes/<%= shoe.image_path %>_Small.jpg">
+      <%= shoe.brand + " " + shoe.model %>
+    </a>
+    <%= review.message %>
+  </div>
+  <% end %>
 
 
+</div>

@@ -7,13 +7,7 @@ end
 get '/shoes/?' do
   erb :shoes
 end
-# # get a form to add a new shoes
-# get '/shoes/new' do
-# end
-# # add a new shoes
-# post '/shoes' do
-# end
-# get a specific instance of shoes
+
 get '/shoes/:id/?' do
   @shoe = Shoe.find(params[:id])
   # erb :shoe_instance
