@@ -9,12 +9,11 @@ get '/session-reset' do
 end
 
 get '/' do
-  if authorized?
-    erb :shoes
-  else
+  @shoes = ["La Sportiva Solution", "Mad Rock Shark", "Evolv Shaman", "Tenaya Oasi"]
     erb :index
-  end
 end
+
+
 
 get '/logout' do
   session.clear
