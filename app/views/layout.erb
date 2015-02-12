@@ -11,17 +11,17 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/animate.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+ <title>Rock Shoe Fit Review</title>
+
 </head>
 <body>
-  <div id="header"><div id="navbar"><a href="/">home</a> <a href="/users/<%= current_user_username if current_user_exist? %>">profile</a> <a href="/"><span style="margin:0">rock shoes</span></a><span style="float:right"><%= responsive_login_form %></span></div></div>
-  <div id='container'>
+<div class="header"></div>
     <%= yield %>
-  </div>
-  <div id="footer"></div>
+
 </body>
 </html>

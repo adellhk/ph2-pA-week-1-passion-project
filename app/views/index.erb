@@ -1,6 +1,18 @@
-<div class="content">
-<h1 class="title">SHU.ME</h1>
-<h1 class="subtitle">ROCK SHOE DATABASE</h1>
-<a href="/login">login</a>
-<a href="/users/new">register</a>
+
+<div class="central">
+  <a href="#" class="button">Rock Shoe Size Review</a>
+  <form id="shoeBar">
+    <% shoe = @shoes.sample %>
+    <input type="text" id="shoeBarInput" placeholder="eg. <%= shoe %>" autocomplete="off" size="40" name="shoeBarInput">
+    <input type="submit">
+  </form>
 </div>
+
+<div id="searchResults">
+
+</div>
+
+
+
+
+

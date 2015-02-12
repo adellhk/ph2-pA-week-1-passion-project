@@ -1,7 +1,31 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  function animate (element, animationName) {
+    $(element).addClass(animationName).one(animationEnd, function() {
+      $(this).removeClass(animationName);
+    });
+  }
+  animate($('.button'), "animated fadeIn")
+
+  $('#shoeBar').submit(function(e){
+    e.preventDefault();
+
+    $.ajax({
+      url: '/shoesearch',
+      type: 'get',
+      data: $(this).serialize()
+      // dataType: 'json'
+    }).done(function(serverData){
+      // console.log(serverData)
+      $('#searchResults').append(serverData)
+      $.each($('.results'), function( index, result){
+        $(result).css('display', 'inline-block');
+        animate(result, "animated fadeIn");
+      });
+    }).fail(function(){
+      console.log('Failed')
+    })
+
+  })
 });
